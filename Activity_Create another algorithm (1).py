@@ -180,7 +180,7 @@ print(ip_addresses)
 # Task 7
 # The next step is to update the original file that was used to create the `ip_addresses` list. A line of code containing the `.join()` method has been added to the code so that the file can be updated. This is necessary because `ip_addresses` must be in string format when used inside the `with` statement to rewrite the file.
 # The `.join()` method takes in an iterable (such as a list) and concatenates every element of it into a string. The `.join()` method is applied to a string consisting of the character that will be used to separate every element in the iterable once its converted into a string. In the code below, the method is applied to the string `" "`, which contains just a space character. The argument of the `.join()` method is the iterable you want to convert, and in this case, that's `ip_addresses`. As a result, it converts `ip_addresses` from a list back into a string with a space between each element and the next.
-# After this line with the `.join()` method, build the `with` statement that rewrites the original file. Use the `"w"` parameter when calling the `open()` function to delete the contents in the original file and replace it with what you want to write. Be sure to replace each `### YOUR CODE HERE ###` with your own code before you run the following cell. This code cell will not produce an output.
+# After this line with the `.join()` method, build the `with` statement that rewrites the original file. Use the `"w"` parameter when calling the `open()` function to delete the contents in the original file and replace it with what you want to write.
 
 
 # Assign `import_file` to the name of the file 
@@ -355,7 +355,6 @@ def update_file(import_file, remove_list):
 # Use the following list of IP addresses as the second argument:
 # `["192.168.25.60", "192.168.140.81", "192.168.203.198"]`
 # After the function call, use a `with` statement to read the contents of the allow list. Then display the contents of the allow list. Run it to verify that the file has been updated by the function.
-# Be sure to replace the `### YOUR CODE HERE ###` with your own code before you run the following cell.
 
 
 # Define a function named `update_file` that takes in two parameters: `import_file` and `remove_list`
